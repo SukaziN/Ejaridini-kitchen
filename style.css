@@ -98,6 +98,7 @@ nav ul li a:hover {
   padding: 3px 3px;
   border-radius: 5px;
   text-transform: capitalize;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.227);
 }
 #directions a:hover {
   background-color: orangered;
@@ -137,8 +138,10 @@ nav ul li a:hover {
   border: 1px solid orange;
   border-radius: 5px;
   font-size: 1em;
+  background-color: orangered;
+  color: white;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.227);
 }
 #feedback-button:hover {
   cursor: pointer;
-  background-color: blanchedalmond;
 }
