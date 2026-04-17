@@ -145,3 +145,6 @@ nav ul li a:hover {
 #feedback-button:hover {
   cursor: pointer;
 }
+i.small {
+  font-weight: 100;
+}
