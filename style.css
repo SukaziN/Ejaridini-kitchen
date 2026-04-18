@@ -137,6 +137,7 @@ nav ul li a:hover {
   border: 1px solid orange;
   border-radius: 50%;
 }
+
 .comment-box {
   width: 200px;
   height: 100px;
@@ -158,4 +159,17 @@ nav ul li a:hover {
 }
 i.small {
   font-weight: 100;
+}
+input {
+  width: 8em;
+  height: 1.5em;
+  margin: 5px;
+  border: 1px solid orange;
+  border-radius: 4px;
+}
+textarea {
+  width: 14em;
+  height: 4em;
+  border: 1px solid orange;
+  border-radius: 4px;
 }
