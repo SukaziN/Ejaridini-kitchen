@@ -7,7 +7,7 @@ header {
   background-color: black;
   color: white;
   padding: 3px 3px;
-  border-radius: 4px;
+  border-radius: 2px;
   /*border: 1px solid orange;*/
 }
 img.logo {
@@ -24,8 +24,8 @@ h3 {
   color: whitesmoke;
   font-family: Arial, Helvetica, sans-serif;
   padding: 4px 4px;
-  border: 1px solid orange;
-  border-radius: 5px;
+  /*border: 1px solid orange;*/
+  border-radius: 2px;
   text-transform: capitalize;
 }
 .business-header {
@@ -43,7 +43,7 @@ nav ul {
 nav ul li {
   border: 1px solid rgb(255, 162, 0);
   padding: 2px 3px;
-  border-radius: 5px;
+  border-radius: 2px;
   background-color: orange;
   text-transform: capitalize;
 }
@@ -68,13 +68,13 @@ nav ul li a:hover {
   display: flex;
   justify-content: space-around;
   background-color: rgba(249, 71, 6, 0.946);
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 #menus img,
 #team img {
   border: 2px solid rgb(255, 162, 0);
-  border-radius: 5px;
+  border-radius: 2px;
 }
 #menus img:hover {
   transform: scale(150%);
@@ -85,7 +85,7 @@ nav ul li a:hover {
   grid-template-columns: 160px 160px 160px 160px 160px;
   grid-gap: 10px;
   background-color: rgba(249, 71, 6, 0.946);
-  border-radius: 5px;
+  border-radius: 2px;
   padding-top: 10px;
   padding-bottom: 10px;
   /*display: block;
@@ -99,7 +99,7 @@ nav ul li a:hover {
   position: relative;
   left: 50px;
   border: 2px solid rgb(255, 162, 0);
-  border-radius: 5%;
+  border-radius: 2px;
 }
 #directions a {
   text-decoration: none;
@@ -107,7 +107,7 @@ nav ul li a:hover {
   background-color: orange;
   color: black;
   padding: 3px 3px;
-  border-radius: 5px;
+  border-radius: 2px;
   text-transform: capitalize;
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.227);
 }
@@ -144,11 +144,11 @@ nav ul li a:hover {
   border: 1px solid olivedrab;
   background-color: blanchedalmond;
   font-style: italic;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 #feedback-button {
   border: 1px solid orange;
-  border-radius: 5px;
+  border-radius: 2px;
   font-size: 1em;
   background-color: orangered;
   color: white;
@@ -165,11 +165,11 @@ input {
   height: 1.5em;
   margin: 5px;
   border: 1px solid orange;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 textarea {
   width: 14em;
   height: 4em;
   border: 1px solid orange;
-  border-radius: 4px;
+  border-radius: 2px;
 }
