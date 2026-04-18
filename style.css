@@ -1,6 +1,14 @@
 * {
   scroll-behavior: smooth;
 }
+:root {
+  --border: 1px solid orange;
+  --border-radius: 2px;
+  --background-color: orangered;
+  --color: white;
+  --title-background: black;
+  --button-background: orange;
+}
 body {
   background-color: whitesmoke;
   line-height: 1.5em;
