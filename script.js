@@ -8,4 +8,5 @@ function displayFeedback() {
   let customerFeedback = document.getElementById("customer-feedback");
   customerFeedback.classList.add("comment-box");
   customerFeedback.innerText = feedback + " - " + name + " " + surname;
+  alert("Thank you for your feedback!💖");
 }
