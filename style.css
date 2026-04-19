@@ -15,11 +15,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 header {
-  background-color: black;
-  color: white;
+  background-color: var(--title-background);
+  color: var(--color);
   padding: 3px 3px;
-  border-radius: 2px;
-  /*border: 1px solid orange;*/
+  border-radius: var(--border-radius);
 }
 img.logo {
   width: 110px;
@@ -31,12 +30,11 @@ h1,
 h2,
 h3 {
   text-align: center;
-  background-color: black;
+  background-color: var(--title-background);
   color: whitesmoke;
   font-family: Arial, Helvetica, sans-serif;
   padding: 4px 4px;
-  /*border: 1px solid orange;*/
-  border-radius: 2px;
+  border-radius: var(--border-radius);
   text-transform: capitalize;
 }
 .business-header {
@@ -52,10 +50,10 @@ nav ul {
   list-style: none;
 }
 nav ul li {
-  border: 1px solid rgb(255, 162, 0);
+  border: var(--border);
   padding: 2px 3px;
-  border-radius: 2px;
-  background-color: orange;
+  border-radius: var(--border-radius);
+  background-color: var(--button-background);
   text-transform: capitalize;
 }
 nav ul li a {
@@ -67,8 +65,8 @@ nav ul li a {
 nav ul li:hover,
 nav ul li a:hover {
   cursor: pointer;
-  background-color: orangered;
-  color: white;
+  background-color: var(--background-color);
+  color: var(--color);
 }
 #menus,
 #team {
@@ -78,14 +76,14 @@ nav ul li a:hover {
   width: 80%;
   display: flex;
   justify-content: space-around;
-  background-color: rgba(249, 71, 6, 0.946);
-  border-radius: 2px;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
 }
 
 #menus img,
 #team img {
-  border: 2px solid rgb(255, 162, 0);
-  border-radius: 2px;
+  border: var(--border);
+  border-radius: var(--border-radius);
 }
 #menus img:hover {
   transform: scale(150%);
@@ -93,45 +91,42 @@ nav ul li a:hover {
 
 #marketing {
   display: grid;
-  grid-template-columns: 160px 160px 160px 160px 160px;
-  grid-gap: 10px;
-  background-color: rgba(249, 71, 6, 0.946);
-  border-radius: 2px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 5px;
+  column-gap: 0;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
   padding-top: 10px;
   padding-bottom: 10px;
-  /*display: block;
-  margin: 0 auto;*/
 }
 #marketing img {
   padding: 0;
   margin: 0 auto;
   width: 170px;
   height: 170px;
-  position: relative;
-  left: 50px;
-  border: 2px solid rgb(255, 162, 0);
-  border-radius: 2px;
+  border: var(--border);
+  border-radius: var(--border-radius);
 }
 #directions a {
   text-decoration: none;
-  border: 1px solid orange;
-  background-color: orange;
+  border: var(--border);
+  background-color: var(--button-background);
   color: black;
   padding: 3px 3px;
-  border-radius: 2px;
+  border-radius: var(--border-radius);
   text-transform: capitalize;
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.227);
 }
 #directions a:hover {
-  background-color: orangered;
-  color: white;
+  background-color: var(--background-color);
+  color: var(--color);
 }
 #extras {
   display: flex;
   justify-content: space-between;
 }
 #extras ul {
-  border-right: 1px solid orange;
+  border-right: var(--border);
 }
 #extras ul li {
   list-style-type: square;
@@ -145,7 +140,7 @@ nav ul li a:hover {
 #benefits-visuals img {
   width: 125px;
   height: 125px;
-  border: 1px solid orange;
+  border: var(--border);
   border-radius: 50%;
 }
 
@@ -155,14 +150,14 @@ nav ul li a:hover {
   border: 1px solid olivedrab;
   background-color: blanchedalmond;
   font-style: italic;
-  border-radius: 2px;
+  border-radius: var(--border-radius);
 }
 #feedback-button {
-  border: 1px solid orange;
-  border-radius: 2px;
+  border: var(--border);
+  border-radius: var(--border-radius);
   font-size: 1em;
-  background-color: orangered;
-  color: white;
+  background-color: var(--background-color);
+  color: var(--color);
   box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.227);
 }
 #feedback-button:hover {
@@ -175,12 +170,12 @@ input {
   width: 8em;
   height: 1.5em;
   margin: 5px;
-  border: 1px solid orange;
-  border-radius: 2px;
+  border: var(--border);
+  border-radius: var(--border-radius);
 }
 textarea {
   width: 14em;
   height: 4em;
-  border: 1px solid orange;
-  border-radius: 2px;
+  border: var(--border);
+  border-radius: var(--border-radius);
 }
