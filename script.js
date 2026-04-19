@@ -7,6 +7,10 @@ function displayFeedback() {
   let feedback = document.getElementById("comment").value;
   let customerFeedback = document.getElementById("customer-feedback");
   customerFeedback.classList.add("comment-box");
-  customerFeedback.innerText = feedback + " - " + name + " " + surname;
+  if (name.length == 0 && surname.length == 0) {
+    customerFeedback.innerText = feedback + " - " + "Anonymous";
+  } else {
+    customerFeedback.innerText = feedback + " - " + name + " " + surname;
+  }
   alert("Thank you for your feedback!💖");
 }
