@@ -2,8 +2,8 @@
   scroll-behavior: smooth;
 }
 :root {
-  --border: 1px solid orange;
-  --border-radius: 2px;
+  --border: 0.0625rem solid orange;
+  --border-radius: 0.125rem;
   --background-color: orangered;
   --color: white;
   --title-background: black;
@@ -21,8 +21,8 @@ header {
   border-radius: var(--border-radius);
 }
 img.logo {
-  width: 110px;
-  height: 100px;
+  width: 6.875rem;
+  height: 6.25rem;
   border-radius: 50%;
   margin-right: 1.2em;
 }
@@ -33,7 +33,7 @@ h3 {
   background-color: var(--title-background);
   color: whitesmoke;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 4px 4px;
+  padding: 0.25rem 0.25rem;
   border-radius: var(--border-radius);
   text-transform: capitalize;
 }
@@ -51,10 +51,11 @@ nav ul {
 }
 nav ul li {
   border: var(--border);
-  padding: 2px 3px;
+  padding: 0.125rem 0.1875rem;
   border-radius: var(--border-radius);
   background-color: var(--button-background);
   text-transform: capitalize;
+  margin-right: 0.1875rem;
 }
 nav ul li a {
   text-decoration: none;
@@ -72,7 +73,7 @@ nav ul li a:hover {
 #team {
   margin: 0 auto;
   padding: 1.2em;
-  height: 400px;
+  height: 25rem;
   width: 80%;
   display: flex;
   justify-content: space-around;
@@ -92,18 +93,18 @@ nav ul li a:hover {
 #marketing {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  row-gap: 5px;
+  row-gap: 0.3125rem;
   column-gap: 0;
   background-color: var(--background-color);
   border-radius: var(--border-radius);
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
 }
 #marketing img {
   padding: 0;
   margin: 0 auto;
-  width: 170px;
-  height: 170px;
+  width: 10.625rem;
+  height: 10.625rem;
   border: var(--border);
   border-radius: var(--border-radius);
 }
@@ -112,10 +113,10 @@ nav ul li a:hover {
   border: var(--border);
   background-color: var(--button-background);
   color: black;
-  padding: 3px 3px;
+  padding: 0.1875rem 0.1875rem;
   border-radius: var(--border-radius);
   text-transform: capitalize;
-  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.227);
+  box-shadow: 0.125rem 0.125rem 0.0625rem rgba(0, 0, 0, 0.227);
 }
 #directions a:hover {
   background-color: var(--background-color);
@@ -135,19 +136,19 @@ nav ul li a:hover {
 }
 #benefits-visuals {
   display: grid;
-  grid-template-columns: 100px 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 #benefits-visuals img {
-  width: 125px;
-  height: 125px;
+  width: 7.8125rem;
+  height: 7.8125rem;
   border: var(--border);
   border-radius: 50%;
 }
 
 .comment-box {
-  width: 200px;
-  height: 100px;
-  border: 1px solid olivedrab;
+  width: 12.5rem;
+  height: 6.25rem;
+  border: 0.0625rem solid olivedrab;
   background-color: blanchedalmond;
   font-style: italic;
   border-radius: var(--border-radius);
@@ -158,7 +159,7 @@ nav ul li a:hover {
   font-size: 1em;
   background-color: var(--background-color);
   color: var(--color);
-  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.227);
+  box-shadow: 0.125rem 0.125rem 0.0625rem rgba(0, 0, 0, 0.227);
 }
 #feedback-button:hover {
   cursor: pointer;
@@ -169,7 +170,7 @@ i.small {
 input {
   width: 8em;
   height: 1.5em;
-  margin: 5px;
+  margin: 0.3125rem;
   border: var(--border);
   border-radius: var(--border-radius);
 }
