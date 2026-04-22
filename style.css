@@ -13,6 +13,56 @@ body {
   background-color: whitesmoke;
   line-height: 1.5em;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+@media (max-width: 480px) {
+  /*small devices(portrait phones)*/
+  #marketing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #marketing img {
+    width: 9.625rem;
+    height: 9.625rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  /*landscape phones and small tablets*/
+  #marketing {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  /*tablets and small laptops*/
+  #marketing {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  /*desktops*/
+  #marketing {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1441px) {
+  #marketing {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+@media (orientation: landscape) {
+  body {
+    line-height: 1.6;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111;
+    color: #fff;
+  }
 }
 header {
   background-color: var(--title-background);
