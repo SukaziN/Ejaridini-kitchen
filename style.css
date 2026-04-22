@@ -101,8 +101,7 @@ nav {
 
 nav ul {
   display: flex;
-  justify-content: left;
-  /*flex-direction: column;*/
+  justify-content: center;
 
   list-style: none;
 }
@@ -142,10 +141,13 @@ nav ul li a:hover {
   border: var(--border);
   border-radius: var(--border-radius);
 }
+
 #menus img:hover {
   transform: scale(150%);
 }
-
+.make-bigger {
+  transform: scale(150%);
+}
 #marketing {
   display: grid;
   grid-template-columns: 1fr 1fr;

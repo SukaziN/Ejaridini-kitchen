@@ -1,7 +1,4 @@
 function displayFeedback() {
-  //let date = new Date();
-  //console.log(date);
-  //formatDate; //make it so the day, date and time appear without the GMT stuff. Also make sure that once a comment has been left it keeps the time it was commented and doesn't refresh to the current date and time
   let name = document.getElementById("name").value;
   let surname = document.getElementById("surname").value;
   let feedback = document.getElementById("comment").value;
@@ -24,7 +21,21 @@ function displayFeedback() {
     localStorage.setItem("storedText", feedback.value);
   });*/ //somehow the error is on line 25... figure out alternative way
 }
+let mealMenu = document.getElementById("meal-menu");
+let platterMenu = document.getElementById("platter-menu");
 
+function makeMealMenuBig() {
+  platterMenu.classList.remove("make-bigger");
+  mealMenu.classList.add("make-bigger");
+}
+function makePlatterMenuBig() {
+  mealMenu.classList.remove("make-bigger");
+  platterMenu.classList.add("make-bigger");
+}
+function makeMenusSmall() {
+  mealMenu.classList.remove("make-bigger");
+  platterMenu.classList.remove("make-bigger");
+}
 /* <script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script> put this line in the head in html
   <div>Views: <span id="counter">Loading...</span></div> put this line below header in html
 const counter = new counter({ workspace: "Ejaridini Kitchen" });
