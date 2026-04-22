@@ -13,7 +13,6 @@ body {
   background-color: whitesmoke;
   line-height: 1.5em;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
 }
 @media (max-width: 480px) {
   /*small devices(portrait phones)*/
@@ -71,8 +70,8 @@ header {
   border-radius: var(--border-radius);
 }
 img.logo {
-  width: 7.875rem;
-  height: 7.25rem;
+  width: 9.875rem;
+  height: 9.25rem;
   border-radius: 50%;
   margin-right: 1.2em;
 }
@@ -94,37 +93,44 @@ h3 {
 h1 {
   border: none;
 }
+nav {
+  margin-top: 0.1875rem;
+  background-color: #111;
+  padding: 0.125rem 0.1875rem;
+}
+
 nav ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: left;
+  /*flex-direction: column;*/
+
   list-style: none;
 }
 nav ul li {
   border: var(--border);
   padding: 0.125rem 0.1875rem;
   border-radius: var(--border-radius);
-  background-color: var(--button-background);
+  background-color: var(--background-color);
   text-transform: capitalize;
   margin-right: 0.1875rem;
 }
 nav ul li a {
   text-decoration: none;
-  color: black;
+  color: var(--color);
   font-size: 1.1em;
 }
 
 nav ul li:hover,
 nav ul li a:hover {
   cursor: pointer;
-  background-color: var(--background-color);
-  color: var(--color);
+  background-color: var(--button-background);
+  color: black;
 }
 #menus,
 #team {
   margin: 0 auto;
   padding: 1.2em;
-  height: 25rem;
-  width: 80%;
+  height: 18rem;
   display: flex;
   justify-content: space-around;
   background-color: var(--background-color);
@@ -142,7 +148,7 @@ nav ul li a:hover {
 
 #marketing {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   row-gap: 0.3125rem;
   column-gap: 0;
   background-color: var(--background-color);
@@ -152,11 +158,18 @@ nav ul li a:hover {
 }
 #marketing img {
   padding: 0;
-  margin: 0 auto;
+  margin: 1rem;
   width: 10.625rem;
   height: 10.625rem;
   border: var(--border);
   border-radius: var(--border-radius);
+}
+#marketing .meal {
+  border: var(--border);
+}
+figcaption {
+  color: var(--color);
+  margin: 0 1rem;
 }
 #directions a {
   text-decoration: none;
@@ -186,7 +199,7 @@ nav ul li a:hover {
 }
 #benefits-visuals {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
 }
 #benefits-visuals img {
   width: 7.8125rem;
