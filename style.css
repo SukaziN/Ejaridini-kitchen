@@ -245,3 +245,18 @@ textarea {
   border: var(--border);
   border-radius: var(--border-radius);
 }
+#disclaimer {
+  display: flex;
+  justify-content: space-around;
+  font-size: small;
+  position: relative;
+  left: -3rem;
+}
+#disclaimer input {
+  height: 1rem;
+}
+#disclaimer label {
+  position: relative;
+  left: -1.8rem;
+  margin-bottom: 0.125rem;
+}
