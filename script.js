@@ -1,25 +1,58 @@
+let customerFeedback1 = document.getElementById("feedback-1");
+let customerFeedback2 = document.getElementById("feedback-2"); //these selectors are here as an effort to avoid using a loop when checking if the first li for feedback already has text so the comment can be displayed in one of them (for site performance concerns)
+let customerFeedback3 = document.getElementById("feedback-3");
+let customerFeedback4 = document.getElementById("feedback-4");
 function displayFeedback() {
   let name = document.getElementById("name").value;
   let surname = document.getElementById("surname").value;
   let feedback = document.getElementById("comment").value;
-  let customerFeedback = document.getElementById("customer-feedback");
-  customerFeedback.classList.add("comment-box");
+  customerFeedback1.classList.add("comment-box");
+
   if (name.length == 0 && surname.length == 0) {
-    customerFeedback.innerText = feedback + " - " + "Anonymous";
+    let message = feedback + " - " + "Anonymous";
+    customerFeedback1.innerText = message;
+    customerFeedback1 = message;
+    localStorage.setItem("key", message);
+
+    if (localStorage.getItem("key")) {
+      message = localStorage.getItem("key");
+      console.log(message);
+    }
   } else {
-    customerFeedback.innerText = feedback + " - " + name + " " + surname;
+    let message = feedback + " - " + name + " " + surname;
+    customerFeedback1.innerText = message;
+    customerFeedback1 = message;
+    localStorage.setItem("key", message);
+
+    if (localStorage.getItem("key")) {
+      message = localStorage.getItem("key");
+      console.log(message);
+    }
+  }
+  if (customerFeedback1.length > 0) {
+    if (name.length == 0 && surname.length == 0) {
+      let message = feedback + " - " + "Anonymous";
+      customerFeedback1.innerText = message;
+      customerFeedback1 = message;
+      localStorage.setItem("key", message);
+
+      if (localStorage.getItem("key")) {
+        message = localStorage.getItem("key");
+        console.log(message);
+      }
+    } else {
+      let message = feedback + " - " + name + " " + surname;
+      customerFeedback1.innerText = message;
+      customerFeedback1 = message;
+      localStorage.setItem("key", message);
+
+      if (localStorage.getItem("key")) {
+        message = localStorage.getItem("key");
+        console.log(message);
+      }
+    }
   }
   alert("Thank you for your feedback!💖");
-
-  /* window.onload = function () {
-    let savedText = this.localStorage.getItem("storedText");
-    if (savedText) {
-      feedback.value = savedText;
-    }
-  };
-  feedback.addEventListener("input", function () {
-    localStorage.setItem("storedText", feedback.value);
-  });*/ //somehow the error is on line 25... figure out alternative way
 }
 let mealMenu = document.getElementById("meal-menu");
 let platterMenu = document.getElementById("platter-menu");
@@ -53,14 +86,3 @@ function tracker(e) {
     console.log(counter.length); //this is how many times the ul in navigation is clicked
   }
 }
-
-/* <script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script> put this line in the head in html
-  <div>Views: <span id="counter">Loading...</span></div> put this line below header in html
-const counter = new counter({ workspace: "Ejaridini Kitchen" });
-counter
-  .up("page-views")
-  .then((result) => {
-    console.log(`Page views: ${result.value}`);
-    document.getElementById("counter").textContent = result.value;
-  })
-  .catch((error) => console.error("Counter error:", error.message));*/ //initiate the api key and api url first...
