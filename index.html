@@ -24,17 +24,17 @@
       <div id="business-name"><h1>Ejaridini Kitchen</h1></div>
       
     </header>
-  <nav id="navigation">
-        <ul>
-           <li><a rel="noopener" href="#location">Location</a></li>
-          <li><a rel="noopener" href="#operating-hours">Opening hours</a></li>
-          <li ><a rel="noopener" href="#about">About</a></li>
-           <li><a rel="noopener" href="#chefs">The Chefs</a></li></ul><ul>
-          <li><a rel="noopener" href="#menu">Menu</a></li>
-          <li><a rel="noopener" href="#order">Order now</a></li>
-            <li><a rel="noopener" href="#benefits">Benefits</a></li>
-            <li><a rel="noopener" target="_blank" href="https:www.facebook.com/innocentia.nomfundomtolo">Follow us</a></li></ul><ul>
-          <li><a rel="noopener" href="#reviews">Reviews</a></li>
+  <nav >
+        <ul id="navigation">
+           <li class="navigation" class="location" id="nav-location"><a rel="noopener" href="#location">Location</a></li>
+          <li class="navigation" class="opening-hours" id="nav-opening-hours"><a rel="noopener" href="#operating-hours">Opening hours</a></li>
+          <li class="navigation" class="About" id="nav-about"><a rel="noopener" href="#about">About</a></li>
+           <li class="navigation" class="chefs" id="nav-chefs"><a rel="noopener" href="#chefs">The Chefs</a></li></ul><ul>
+          <li class="navigation" class="menu" id="nav-menu"><a rel="noopener" href="#menu">Menu</a></li>
+          <li class="navigation" class="order-info" id="nav-order-info"><a rel="noopener" href="#order">Order now</a></li>
+            <li class="navigation" class="benefits" id="nav-benefits"><a rel="noopener" href="#benefits">Benefits</a></li>
+            <li class="navigation" class="facebook-page" id="nav-facebook-page"><a rel="noopener" target="_blank" href="https:www.facebook.com/innocentia.nomfundomtolo">Follow us</a></li></ul><ul>
+          <li class="navigation" class="reviews" id="nav-about"><a rel="noopener" href="#reviews">Reviews</a></li>
         </ul>
       </nav>
    <h2>Traditional food and Sandwiches</h2>
@@ -140,7 +140,7 @@ Leave us feedback below:
 <label for="surname">Your surname (<i>optional</i>):</label>
 <input id="surname" placeholder="Surname" type="text"><br><br>
 <label for="comment">Your comment:</label><br><textarea title="comment" name="comment" id="comment" placeholder="Type in this box and hit submit..."></textarea><br>
- 
+ <select name="acknowledgement" id="acknowledgement">I agree to the information I provided being stored on this website.</select>
 <button id="feedback-button" type="button" onclick="displayFeedback()">Submit</button></div>
 
   </body>

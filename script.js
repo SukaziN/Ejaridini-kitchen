@@ -36,6 +36,24 @@ function makeMenusSmall() {
   mealMenu.classList.remove("make-bigger");
   platterMenu.classList.remove("make-bigger");
 }
+const counter = []; //tracks analytics when the general ul area in navigation is clicked (make it more specific)
+const container = document.querySelector("#navigation");
+container.addEventListener("click", tracker);
+function tracker(e) {
+  const el = e.target;
+  if (el.id) {
+    const list = {};
+    list.content = el.textContent;
+    list.id = el.id;
+    list.tagName = el.tagName;
+    list.class = el.className;
+    console.dir(el);
+    counter.push(list);
+    console.log(counter);
+    console.log(counter.length); //this is how many times the ul in navigation is clicked
+  }
+}
+
 /* <script src="https://cdn.jsdelivr.net/npm/counterapi/dist/counter.browser.min.js"></script> put this line in the head in html
   <div>Views: <span id="counter">Loading...</span></div> put this line below header in html
 const counter = new counter({ workspace: "Ejaridini Kitchen" });
