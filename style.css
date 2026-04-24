@@ -160,7 +160,7 @@ nav ul li a:hover {
 }
 #marketing img {
   padding: 0;
-  margin: 0.1rem;
+  margin: 0;
   width: 10.625rem;
   height: 10.625rem;
   border: var(--border);
