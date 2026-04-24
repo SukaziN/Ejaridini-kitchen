@@ -129,8 +129,8 @@ nav ul li a:hover {
 #team {
   margin: 0 auto;
   padding: 1.2em;
-  height: 16rem;
-  width: 10rem;
+  width: inherit;
+  height: inherit;
   display: flex;
   justify-content: space-around;
   background-color: var(--background-color);
@@ -139,6 +139,8 @@ nav ul li a:hover {
 
 #menus img,
 #team img {
+  height: 16rem;
+  width: 10rem;
   border: var(--border);
   border-radius: var(--border-radius);
 }
