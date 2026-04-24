@@ -130,6 +130,7 @@ nav ul li a:hover {
   margin: 0 auto;
   padding: 1.2em;
   height: 16rem;
+  width: 10rem;
   display: flex;
   justify-content: space-around;
   background-color: var(--background-color);
