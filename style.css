@@ -129,11 +129,11 @@ nav ul li a:hover {
 #team {
   margin: 0 auto;
   padding: 1.2em;
-  /* width: inherit;
-  height: inherit;*/
+  width: 100vw;
+  height: inherit;
   display: flex;
   justify-content: space-around;
-  /* background-color: var(--background-color);*/
+  background-color: var(--background-color);
   border-radius: var(--border-radius);
 }
 
