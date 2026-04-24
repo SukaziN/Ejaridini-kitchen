@@ -161,8 +161,8 @@ nav ul li a:hover {
 #marketing img {
   padding: 0;
   margin: 0;
-  width: 9.625rem;
-  height: 9.625rem;
+  width: 8.625rem;
+  height: 8.625rem;
   border: var(--border);
   border-radius: var(--border-radius);
 }
