@@ -258,14 +258,12 @@ textarea {
   justify-content: start;
   font-size: small;
   font-style: italic;
-  position: relative;
-  left: -3rem;
+  /*position: relative;
+  left: -3rem;*/
 }
 #disclaimer input {
   height: 0.9rem;
 }
 #disclaimer label {
-  /* position: relative;
-  left: -2rem;*/
   margin-bottom: 0.125rem;
 }
